@@ -1,21 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScreen">
-    
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="splash screen"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:textSize="20sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/md_green_400"
+    android:id="@+id/containerLL"
+    >
 
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/logo"
+        android:id="@+id/imgLogo"
         />
 
+    <com.agrawalsuneet.dotsloader.loaders.TashieLoader
+        android:layout_centerInParent="true"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        app:tashieloader_animDelay="200"
+        app:tashieloader_animDur="1000"
+        app:tashieloader_dotsColor="@color/md_white_1000"
+        app:tashieloader_dotsDist="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imgLogo"
+        app:tashieloader_dotsRadius="10dp"
+        app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
+        app:tashieloader_noOfDots="6" />
 
 
-</LinearLayout>
+    <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    android:text="sitabah v.01"
+    android:textAlignment="center"
+    android:id="@+id/appName"
+    android:layout_alignParentBottom="true"
+    android:textColor="#ffffff"
+    android:textSize="20sp" />
+
+</RelativeLayout>

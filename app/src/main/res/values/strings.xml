@@ -5,4 +5,13 @@
     <string name="map">Peta</string>
     <string name="list">List</string>
     <string name="about">Tentang</string>
+
+    <string-array name="kategori">
+        <item>Semua</item>
+        <item>Masjid</item>
+        <item>Pura</item>
+        <item>Gereja</item>
+        <item>Wihara</item>
+        <item>Kelenteng</item>
+    </string-array>
 </resources>
